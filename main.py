@@ -17,7 +17,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
   if (message.channel.name == text_channel_name and message.author != client.user):
-    msg = await client.send_message(message.channel, 'valid message')
+    msg = await client.send_message(message.channel, 'hi')
 
 
 client.run(token)
